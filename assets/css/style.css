@@ -995,6 +995,9 @@ section {
     background: #ffb03b;
   }
 }
+section{
+  max-width: 100vw !important;
+}
 
 /*--------------------------------------------------------------
 # Events
