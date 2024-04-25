@@ -12,7 +12,12 @@
 body {
   font-family: "Saira", sans-serif;
   color: #444444;
-  max-width: 100vw !important;
+  width: 100vw !important;
+  overflow-x: hidden;
+  margin: revert-layer;
+}
+section {
+  width: 100% !important;
 }
 
 a {
@@ -994,9 +999,6 @@ section {
     color: #fff;
     background: #ffb03b;
   }
-}
-section{
-  max-width: 100vw !important;
 }
 
 /*--------------------------------------------------------------
