@@ -6224,7 +6224,7 @@
         this.hide();
       }, this._config.delay);
     }
-    _onInteraction(event, isInteracting) {
+    _oninteraction(event, isInteracting) {
       switch (event.type) {
         case 'mouseover':
         case 'mouseout':
@@ -6250,10 +6250,10 @@
       this._maybeScheduleHide();
     }
     _setListeners() {
-      EventHandler.on(this._element, EVENT_MOUSEOVER, event => this._onInteraction(event, true));
-      EventHandler.on(this._element, EVENT_MOUSEOUT, event => this._onInteraction(event, false));
-      EventHandler.on(this._element, EVENT_FOCUSIN, event => this._onInteraction(event, true));
-      EventHandler.on(this._element, EVENT_FOCUSOUT, event => this._onInteraction(event, false));
+      EventHandler.on(this._element, EVENT_MOUSEOVER, event => this._oninteraction(event, true));
+      EventHandler.on(this._element, EVENT_MOUSEOUT, event => this._oninteraction(event, false));
+      EventHandler.on(this._element, EVENT_FOCUSIN, event => this._oninteraction(event, true));
+      EventHandler.on(this._element, EVENT_FOCUSOUT, event => this._oninteraction(event, false));
     }
     _clearTimeout() {
       clearTimeout(this._timeout);

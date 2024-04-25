@@ -1634,7 +1634,7 @@ proto._getItemsForLayout = function( items ) {
  * @param {Boolean} isInstant
  */
 proto._layoutItems = function( items, isInstant ) {
-  this._emitCompleteOnItems( 'layout', items );
+  this._emitCompleteOnitems( 'layout', items );
 
   if ( !items || !items.length ) {
     // no items, emit event with empty array
@@ -1676,7 +1676,7 @@ proto._getItemLayoutPosition = function( /* item */ ) {
 proto._processLayoutQueue = function( queue ) {
   this.updateStagger();
   queue.forEach( function( obj, i ) {
-    this._positionItem( obj.item, obj.x, obj.y, obj.isInstant, i );
+    this._positionitem( obj.item, obj.x, obj.y, obj.isInstant, i );
   }, this );
 };
 
@@ -1698,7 +1698,7 @@ proto.updateStagger = function() {
  * @param {Number} y - vertical position
  * @param {Boolean} isInstant - disables transitions
  */
-proto._positionItem = function( item, x, y, isInstant, i ) {
+proto._positionitem = function( item, x, y, isInstant, i ) {
   if ( isInstant ) {
     // if not transition, just set CSS
     item.goTo( x, y );
@@ -1763,7 +1763,7 @@ proto._setContainerMeasure = function( measure, isWidth ) {
  * @param {String} eventName
  * @param {Array} items - Outlayer.Items
  */
-proto._emitCompleteOnItems = function( eventName, items ) {
+proto._emitCompleteOnitems = function( eventName, items ) {
   var _this = this;
   function onComplete() {
     _this.dispatchEvent( eventName + 'Complete', null, [ items ] );
@@ -2043,7 +2043,7 @@ proto.prepended = function( elems ) {
  * @param {Array of Outlayer.Items} items
  */
 proto.reveal = function( items ) {
-  this._emitCompleteOnItems( 'reveal', items );
+  this._emitCompleteOnitems( 'reveal', items );
   if ( !items || !items.length ) {
     return;
   }
@@ -2059,7 +2059,7 @@ proto.reveal = function( items ) {
  * @param {Array of Outlayer.Items} items
  */
 proto.hide = function( items ) {
-  this._emitCompleteOnItems( 'hide', items );
+  this._emitCompleteOnitems( 'hide', items );
   if ( !items || !items.length ) {
     return;
   }
@@ -2130,7 +2130,7 @@ proto.getItems = function( elems ) {
 proto.remove = function( elems ) {
   var removeItems = this.getItems( elems );
 
-  this._emitCompleteOnItems( 'remove', removeItems );
+  this._emitCompleteOnitems( 'remove', removeItems );
 
   // bail if no items to remove
   if ( !removeItems || !removeItems.length ) {

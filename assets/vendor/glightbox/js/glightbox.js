@@ -345,7 +345,7 @@
     }
   }
   function injectAssets(url, waitFor, callback) {
-    if (isNil(url)) {
+    if (isnil(url)) {
       console.error('Inject assets error');
       return;
     }
@@ -443,7 +443,7 @@
     var type = _typeof(o);
     return type === 'object' && o != null && !isFunction(o) && !isArray(o);
   }
-  function isNil(o) {
+  function isnil(o) {
     return o == null;
   }
   function has(obj, key) {
@@ -916,7 +916,7 @@
       img.srcset = data.srcset;
     }
     img.alt = '';
-    if (!isNil(data.alt) && data.alt !== '') {
+    if (!isnil(data.alt) && data.alt !== '') {
       img.alt = data.alt;
     }
     if (data.title !== '') {
@@ -1155,7 +1155,7 @@
             data[key] = settings[key];
           }
           var nodeData = element.dataset[key];
-          if (!isNil(nodeData)) {
+          if (!isnil(nodeData)) {
             data[key] = _this.sanitizeValue(nodeData);
           }
         });
@@ -1165,7 +1165,7 @@
         if (!data.type && url) {
           data.type = this.sourceType(url);
         }
-        if (!isNil(config)) {
+        if (!isnil(config)) {
           var cleanKeys = [];
           each(data, function (v, k) {
             cleanKeys.push(';\\s?' + k);
@@ -1186,13 +1186,13 @@
         } else {
           if (!data.title && nodeType == 'a') {
             var title = element.title;
-            if (!isNil(title) && title !== '') {
+            if (!isnil(title) && title !== '') {
               data.title = title;
             }
           }
           if (!data.title && nodeType == 'img') {
             var alt = element.alt;
-            if (!isNil(alt) && alt !== '') {
+            if (!isnil(alt) && alt !== '') {
               data.title = alt;
             }
           }
@@ -2179,7 +2179,7 @@
             this.fullElementsList = this.elements;
             this.elements = this.getGalleryElements(this.elements, gallery);
           }
-          if (isNil(index)) {
+          if (isnil(index)) {
             index = this.getElementIndex(element);
             if (index < 0) {
               index = 0;
@@ -2286,7 +2286,7 @@
         if (index < 0 || index > this.elements.length - 1) {
           return false;
         }
-        if (isNil(this.elements[index])) {
+        if (isnil(this.elements[index])) {
           return false;
         }
         var slideNode = this.slidesContainer.querySelectorAll('.gslide')[index];
@@ -2433,8 +2433,8 @@
           slide: this.prevActiveSlide,
           slideNode: this.prevActiveSlide,
           slideIndex: this.prevActiveSlide,
-          slideConfig: isNil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].slideConfig,
-          trigger: isNil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].node,
+          slideConfig: isnil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].slideConfig,
+          trigger: isnil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].node,
           player: this.getSlidePlayerInstance(this.prevActiveSlideIndex)
         };
         var nextData = {
@@ -2508,8 +2508,8 @@
             slide: this.prevActiveSlide,
             slideNode: this.prevActiveSlide,
             slideIndex: this.prevActiveSlideIndex,
-            slideConfig: isNil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].slideConfig,
-            trigger: isNil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].node,
+            slideConfig: isnil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].slideConfig,
+            trigger: isnil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].node,
             player: this.getSlidePlayerInstance(this.prevActiveSlideIndex)
           },
           current: {
@@ -2677,7 +2677,7 @@
         var _this6 = this;
         var list = [];
         this.elements = this.elements ? this.elements : [];
-        if (!isNil(this.settings.elements) && isArray(this.settings.elements) && this.settings.elements.length) {
+        if (!isnil(this.settings.elements) && isArray(this.settings.elements) && this.settings.elements.length) {
           each(this.settings.elements, function (el, i) {
             var slide = new Slide(el, _this6, i);
             var elData = slide.getConfig();

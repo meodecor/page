@@ -212,7 +212,7 @@
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOninteraction: false
     },
     slidesPerView: 'auto',
     pagination: {
@@ -237,7 +237,7 @@
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOninteraction: false
     },
     slidesPerView: 'auto',
     pagination: {
