@@ -2860,7 +2860,7 @@
   .bx-phone-off:before {
     content: "\ebb5";
   }
-  .bx-phone-outgoing:before {
+  .bx-phone-outng:before {
     content: "\ebb6";
   }
   .bx-photo-album:before {
@@ -4936,7 +4936,7 @@
   .bxs-phone-off:before {
     content: "\ee69";
   }
-  .bxs-phone-outgoing:before {
+  .bxs-phone-outng:before {
     content: "\ee6a";
   }
   .bxs-photo-album:before {
