@@ -12,6 +12,7 @@
 body {
   font-family: "Saira", sans-serif;
   color: #444444;
+  max-width: 100vw !important;
 }
 
 a {
@@ -999,7 +1000,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
+  background: url(../img/anhnen/anhnen1.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
