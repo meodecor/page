@@ -106,6 +106,7 @@ h6 {
   top: 50px;
   height: 70px;
   z-index: 997;
+  width: 100vw;
   transition: all 0.5s;
   padding: 10px 0;
   background: rgba(26, 24, 22, 0.85);
@@ -1203,7 +1204,7 @@ section {
 # Chefs
 --------------------------------------------------------------*/
 .chefs {
-  background: url("../img/MauBeGai/1.jpg") center center no-repeat;
+  background: url("../img/maubetrai/2.jpg") center center no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
